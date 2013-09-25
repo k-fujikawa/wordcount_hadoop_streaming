@@ -1,0 +1,2 @@
+hadoop fs -rmr out
+hadoop jar /home/hadoop/hadoop/contrib/streaming/hadoop-streaming-1.1.2.jar -file /home/fujikawa/StockPredict/src/hadoop_streaming/word_count/mapper.py -mapper /home/fujikawa/StockPredict/src/hadoop_streaming/word_count/mapper.py -file /home/fujikawa/StockPredict/src/hadoop_streaming/word_count/reducer.py -reducer /home/fujikawa/StockPredict/src/hadoop_streaming/word_count/reducer.py -input sample -output out
